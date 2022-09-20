@@ -1,0 +1,52 @@
+@keyframes blink{
+    50%{
+        opacity: 0.3
+    }
+    
+}
+
+body{
+    background-image: url("background5.png");
+    background-size: cover;
+    
+}
+
+h1{
+    color:rgb(248, 250, 247);
+    font-size: 3rem;
+    font-style: oblique;
+    text-align: center;
+}
+
+#bday{
+    padding-top:10vh ;
+    color: rgb(243, 67, 70);
+    font-size: 7rem;
+    font: weight 100px;
+    text-align: center;
+    font-style: italic;
+}
+
+#blast{
+    padding-top: 10vh;
+    color:rgb(78, 163, 237);
+    font-size: 1.7rem;
+    font: weight 10px;
+    text-align: center;
+    font-family: cursive
+}
+
+#heart{
+    text-align: center;
+    font-size: 3rem;
+    animation: blink 0.83s linear infinite;
+}
+
+#love{
+    position: absolute;
+    text-align: end;
+    bottom: 5vh;
+    right: 10vh;
+    color: white;
+    font-size: 2rem;
+}
