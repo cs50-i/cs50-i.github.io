@@ -1,4 +1,9 @@
-
+@keyframes blink{
+    50%{
+        opacity: 0.3
+    }
+    
+}
 
 body{
     background-image: url("background5.png");
@@ -29,6 +34,12 @@ h1{
     font: weight 10px;
     text-align: center;
     font-family: cursive
+}
+
+#heart{
+    text-align: center;
+    font-size: 3rem;
+    animation: blink 0.83s linear infinite;
 }
 
 #love{
