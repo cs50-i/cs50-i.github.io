@@ -2,7 +2,7 @@
 
 const he=document.getElementById("he");
 
-he.addEventListener("click",next)
+
 
 
 
