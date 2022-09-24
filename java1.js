@@ -31,5 +31,5 @@ function defpage(){
 }
 
 function next(){
-    location.href="web.html"
+    location.href="got_you.html"
 }
