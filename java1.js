@@ -1,8 +1,6 @@
-
-
 const he=document.getElementById("he");
 
-
+he.addEventListener("click",next)
 
 
 
@@ -13,7 +11,7 @@ const he=document.getElementById("he");
     }
 
     function h(){
-    
+
         but.style.color="white";
     }
 
@@ -33,5 +31,5 @@ function defpage(){
 }
 
 function next(){
-    location.href="web.html"
+    location.href="got_you.html"
 }
