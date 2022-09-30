@@ -1,0 +1,57 @@
+
+body{
+    background-image: url("background5.png");
+    background-size: cover;
+    
+}
+
+h1{
+    text-align: center;
+    color: rgb(248, 86, 229);
+    background-color: black;
+    height: 60px;
+    border-radius: 30px;
+    padding-top: 9px;
+}
+
+form{
+    padding-top: 0vh;
+    border-radius: 5vh;
+    border: solid;
+    border-color: rgb(226, 36, 36);
+    background-color:white ;
+    width: 30vw ;
+    height: 60vh;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+  
+    
+}
+
+video{
+    
+    padding-top: 4vh;
+    height: 20vh;
+
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+#next{
+    width: 10vw;
+    height:6vh;
+    font-size: medium;
+    border-radius: 1vh;
+    background-color:rgb(13, 0, 1) ;
+    color:white;
+
+}
+
+#next:hover{
+    background-color: rgb(102, 135, 135);
+}
