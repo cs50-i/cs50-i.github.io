@@ -3,7 +3,7 @@ const heart=document.getElementById("heart");
 
 var vid = document.getElementById("gaya3_sing");
 vid.autoplay = true;
-vid.load();
+vid.load(); 
 
 
 heart.addEventListener("click",defpage)
