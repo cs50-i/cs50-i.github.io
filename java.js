@@ -1,5 +1,5 @@
 
-const heart=document.getElementById("heart");
+const heart=document.getElementById("heart_l");
 
 var vid = document.getElementById("gaya3_sing");
 vid.autoplay = true;
