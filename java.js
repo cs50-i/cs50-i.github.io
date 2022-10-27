@@ -32,5 +32,5 @@ function al(){
 }
 
 function defpage(){
-    location.href="default.html"
+    location.href="default.html";
 }
