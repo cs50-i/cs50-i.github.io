@@ -1,12 +1,7 @@
+const he=document.getElementById("heart_last");
 
-const heart=document.getElementById("heart_last");
+he.addEventListener("click",next)
 
-var vid = document.getElementById("gaya3_sing");
-vid.autoplay = true;
-vid.load(); 
-
-
-heart.addEventListener("click",defpage);
 
 
     let c="#1178ed"
@@ -16,7 +11,7 @@ heart.addEventListener("click",defpage);
     }
 
     function h(){
-    
+
         but.style.color="white";
     }
 
@@ -32,5 +27,9 @@ function al(){
 }
 
 function defpage(){
-    location.href="default.html";
+    location.href="default.html"
+}
+
+function next(){
+    location.href="default.html"
 }
