@@ -6,7 +6,7 @@ vid.autoplay = true;
 vid.load(); 
 
 
-heart.addEventListener("click",defpage)
+heart.addEventListener("click",defpage);
 
 
     let c="#1178ed"
