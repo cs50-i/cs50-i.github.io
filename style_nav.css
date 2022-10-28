@@ -1,0 +1,42 @@
+img{
+
+    text-align: center;
+    height: 50vh;
+    width:auto;
+    border-radius: 3vh;
+}
+
+div{
+    text-align: center;
+    padding-top: 10vh;
+}
+
+h1{
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 0, 30);
+}
+
+body{
+   
+    background-color: black;
+    text-align: center;
+}
+
+
+    #next{
+    
+    width: 10vw;
+    height:6vh;
+    font-size: medium;
+    border-radius: 1vh;
+    background-color:rgb(253, 253, 253) ;
+   
+
+}
+#next:hover{
+    background-color: rgb(102, 135, 135);
+}
+
