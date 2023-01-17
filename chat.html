@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat</title>
+  <style>
+    .message {
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .message-sender {
+      font-weight: bold;
+    }
+
+    #delete-button {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat-box"></div>
+  <form>
+    <input type="text" id="message" placeholder="Enter your message here">
+    <button type="submit" id="send-button">Send</button>
+  </form>
+  <button id="delete-button">Delete All</button>
+  <script>
+    // get references to the chat box, form elements, and delete button
+    const chatBox = document.getElementById("chat-box");
+    const messageInput = document.getElementById("message");
+    const sendButton = document.getElementById("send-button");
+    const deleteButton = document.getElementById("delete-button");
+
+    let senderName = localStorage.getItem("senderName");
+    if (!senderName) {
+      senderName = prompt("Enter your name: ");
+      localStorage.setItem("senderName", senderName);
+    }
+
+    // check if there are any messages stored in localStorage
+    if (localStorage.getItem("messages")) {
+      // if there are, get the messages from localStorage
+      var messages = JSON.parse(localStorage.getItem("messages"));
+    } else {
+      // if not, create an empty array for messages
+      var messages = [];
+    }
+
+    // add event listener to the form to handle sending messages
+    sendButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      // get the message from the input field
+      const message = messageInput.value;
+      // add the message to the messages array
+      messages.push({sender: senderName, message: message});
+      // save messages array to localStorage
+      localStorage.setItem("messages", JSON.stringify(messages));
+      // clear the input field
+      messageInput.value = "";
+      // update the chat box with the new message
+      updateChatBox();
+    });
+
+    // add event listener to the delete button to handle deleting messages
+    deleteButton.addEventListener("click", () => {
+      // clear the messages array
+      messages = [];
+      // remove the messages from localStorage
+      localStorage.removeItem("messages");
+      // update the chat box
+      updateChatBox();
+    });
+
+    function updateChatBox() {
+      // clear the chat box
+      chatBox.innerHTML = "";
+      // loop through the messages array and add each message to the chat box
+      for (let i = 0; i < messages.length; i++) {
+        const newMessage = document.createElement("div");
+        newMessage.classList.add("message");
+        const sender = document.createElement("span");
+        sender.classList.add("message-sender");
+        sender.innerHTML = messages[i].sender + ": ";
+        newMessage.appendChild(sender);
+        const message = document.createElement("span");
+        message.innerHTML = messages[i].message;
+        newMessage.appendChild(message);
+        chatBox.appendChild(newMessage);
+      }
+    }
+    updateChatBox();
+  </script>
+</body>
+</html>
