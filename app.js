@@ -1,5 +1,5 @@
 const submitButton = document.querySelector('#submit')
-const API_KEY='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'
+const API_KEY='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'
 const outPutElement=document.querySelector('#output')
 const inputElement=document.querySelector('input')
 const historyElement=document.querySelector('.history')
@@ -47,7 +47,7 @@ async function getMessage() {
 
         const response = await fetch('https://api.openai.com/v1/chat/completions', options)
         const data = await response.json()
-        gpt_ans=data.choices[0].message.content //storing gpt answer
+        // gpt_ans=data.choices[0].message.content //storing gpt answer
         console.log(data) 
         outPutElement.textContent=data.choices[0].message.content   
         if(data.choices[0].message.content){
