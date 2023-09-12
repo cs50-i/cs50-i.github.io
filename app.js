@@ -1,5 +1,5 @@
 const submitButton = document.querySelector('#submit')
-const API_KEY=${{ secrets.CHATGPT_API_KEY}}
+const API_KEY=${{ secrets.CHATGPT_API_KEY }}
 const outPutElement=document.querySelector('#output')
 const inputElement=document.querySelector('input')
 const historyElement=document.querySelector('.history')
