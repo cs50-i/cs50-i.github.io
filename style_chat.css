@@ -58,7 +58,9 @@ input{
     width: 100%;
     font-size: 20px;
     padding: 12px 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 5px;
+    color:black;
     box-shadow: rgba(0,0,0,0.05) 0 54px 55px,
     rgba(0,0,0,0.05) 0-12px 30px,
     rgba(0,0,0,0.05) 0 4px 6px,
