@@ -1,5 +1,5 @@
 const submitButton = document.querySelector('#submit')
-const API_KEY='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'
+const API_KEY=${{ secrets.API_KEY }}
 const outPutElement=document.querySelector('#output')
 const inputElement=document.querySelector('input')
 const historyElement=document.querySelector('.history')
